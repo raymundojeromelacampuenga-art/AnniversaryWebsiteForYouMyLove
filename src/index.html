@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
     <title>Anniversary With You BB</title>
     <meta
       name="description"
@@ -1689,6 +1692,602 @@
           padding: 8px 11px;
         }
       }
+
+      /* =========================================================
+         RESPONSIVE DESIGN — PHONE / TABLET / DESKTOP / LARGE SCREEN
+         ========================================================= */
+
+      html,
+      body {
+        width: 100%;
+        min-width: 0;
+      }
+
+      img,
+      svg,
+      video,
+      canvas {
+        max-width: 100%;
+      }
+
+      button,
+      a {
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      .scene-envelope {
+        min-height: 100svh;
+        min-height: 100dvh;
+        padding: clamp(28px, 5vw, 64px) clamp(14px, 4vw, 40px);
+      }
+
+      .scene-envelope h1 {
+        width: min(100%, 680px);
+        font-size: clamp(27px, 5vw, 50px);
+        overflow-wrap: anywhere;
+      }
+
+      .scene-envelope p.sub {
+        width: min(100%, 620px);
+        font-size: clamp(12px, 1.8vw, 15px);
+        margin-bottom: clamp(38px, 7vw, 72px);
+      }
+
+      .envelope-wrap {
+        width: min(320px, 82vw, 42vh);
+        max-width: 320px;
+      }
+
+      .choice {
+        width: min(100%, 440px);
+        margin-top: clamp(30px, 5vw, 46px);
+        gap: clamp(9px, 2vw, 16px);
+      }
+
+      .btn {
+        min-height: 48px;
+        padding: 12px clamp(18px, 4vw, 32px);
+      }
+
+      .scene-letter,
+      .scene-album,
+      .scene-songs,
+      .scene-numbers {
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .scene-letter {
+        padding: clamp(70px, 9vw, 110px) clamp(12px, 4vw, 24px)
+          clamp(80px, 10vw, 130px);
+      }
+
+      .paper-stage,
+      .paper {
+        min-width: 0;
+      }
+
+      .paper {
+        width: 100%;
+        max-width: 600px;
+        padding: clamp(38px, 6vw, 60px) clamp(20px, 6vw, 46px)
+          clamp(34px, 5vw, 52px);
+      }
+
+      .paper h2 {
+        font-size: clamp(23px, 4vw, 29px);
+        padding-right: 28px;
+      }
+
+      .letter-text {
+        font-size: clamp(16px, 2.4vw, 19px);
+        line-height: 1.8;
+        overflow-wrap: anywhere;
+      }
+
+      .letter-text p {
+        margin-bottom: clamp(15px, 2.5vw, 19px);
+      }
+
+      .letter-text p:first-of-type::first-letter {
+        font-size: clamp(43px, 7vw, 52px);
+      }
+
+      .signoff {
+        font-size: clamp(19px, 3vw, 23px);
+      }
+
+      .close-letter-wrap {
+        margin-top: clamp(20px, 4vw, 30px);
+      }
+
+      .btn-close-letter,
+      .btn-reopen {
+        max-width: 100%;
+        white-space: normal;
+        text-align: center;
+      }
+
+      .letter-closed-msg {
+        max-width: 420px;
+        padding: clamp(34px, 7vw, 46px) clamp(16px, 6vw, 34px)
+          clamp(30px, 6vw, 38px);
+      }
+
+      .letter-closed-msg p {
+        font-size: clamp(16px, 2.5vw, 18px);
+      }
+
+      .scene-album {
+        padding: clamp(75px, 10vw, 120px) clamp(12px, 4vw, 24px)
+          clamp(80px, 10vw, 110px);
+      }
+
+      .section-sub {
+        margin-bottom: clamp(35px, 6vw, 60px);
+        font-size: clamp(12px, 2vw, 13.5px);
+      }
+
+      .album-grid {
+        width: min(100%, 980px);
+        gap: clamp(18px, 4vw, 32px);
+      }
+
+      .polaroid {
+        width: clamp(135px, 21vw, 212px);
+        padding: clamp(9px, 1.5vw, 14px) clamp(9px, 1.5vw, 14px)
+          clamp(24px, 3vw, 32px);
+      }
+
+      .scene-songs {
+        padding: clamp(75px, 10vw, 120px) clamp(12px, 4vw, 24px)
+          clamp(90px, 11vw, 140px);
+      }
+
+      .songs-card {
+        width: 100%;
+        max-width: 580px;
+        padding: clamp(28px, 5vw, 40px) clamp(18px, 5vw, 34px)
+          clamp(24px, 4vw, 34px);
+      }
+
+      .songs-card .vinyl {
+        width: clamp(120px, 22vw, 190px);
+        height: clamp(120px, 22vw, 190px);
+        right: clamp(-65px, -6vw, -40px);
+        top: clamp(-65px, -6vw, -40px);
+      }
+
+      .song-row {
+        gap: clamp(8px, 2vw, 14px);
+        padding: 12px clamp(3px, 1vw, 6px);
+        min-width: 0;
+      }
+
+      .song-meta {
+        min-width: 0;
+        overflow: hidden;
+      }
+
+      .song-title,
+      .song-artist {
+        overflow-wrap: anywhere;
+        word-break: break-word;
+      }
+
+      .scene-numbers {
+        padding: clamp(70px, 9vw, 110px) clamp(12px, 4vw, 24px)
+          clamp(70px, 9vw, 100px);
+      }
+
+      .numbers-grid {
+        width: min(100%, 760px);
+        gap: clamp(22px, 5vw, 44px) clamp(18px, 4vw, 44px);
+        margin-top: clamp(34px, 5vw, 52px);
+      }
+
+      .number-card {
+        min-width: clamp(100px, 25vw, 130px);
+      }
+
+      footer {
+        padding: clamp(40px, 7vw, 56px) clamp(14px, 4vw, 24px)
+          clamp(46px, 8vw, 64px);
+      }
+
+      .music-player {
+        right: max(10px, env(safe-area-inset-right));
+        bottom: max(10px, env(safe-area-inset-bottom));
+        max-width: calc(100vw - 20px);
+        min-width: 0;
+      }
+
+      .music-info {
+        min-width: 0;
+      }
+
+      .music-title,
+      .music-subtitle {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      @media (max-width: 480px) {
+        .scene-envelope {
+          padding-left: 16px;
+          padding-right: 16px;
+        }
+
+        .crest {
+          width: 29px;
+          height: 29px;
+          margin-bottom: 12px;
+        }
+
+        .eyebrow {
+          font-size: 9px;
+          letter-spacing: 0.25em;
+          margin-bottom: 11px;
+        }
+
+        .scene-envelope h1 {
+          font-size: clamp(25px, 8vw, 34px);
+          line-height: 1.18;
+        }
+
+        .scene-envelope p.sub {
+          margin-bottom: 34px;
+        }
+
+        .envelope-wrap {
+          width: min(300px, 84vw, 39vh);
+        }
+
+        .seal {
+          width: clamp(50px, 17vw, 66px);
+          height: clamp(50px, 17vw, 66px);
+        }
+
+        .seal svg {
+          width: clamp(21px, 7vw, 27px);
+          height: clamp(21px, 7vw, 27px);
+        }
+
+        .choice {
+          height: auto;
+          flex-wrap: wrap;
+          margin-top: 28px;
+        }
+
+        .choice .btn {
+          flex: 1 1 130px;
+          justify-content: center;
+        }
+
+        .scroll-hint {
+          bottom: 12px;
+          font-size: 8px;
+          letter-spacing: 0.16em;
+        }
+
+        .paper {
+          padding: 40px 20px 34px;
+        }
+
+        .paper .corner-heart {
+          top: 15px;
+          right: 17px;
+          width: 21px;
+          height: 21px;
+        }
+
+        .letter-text {
+          font-size: 16px;
+          line-height: 1.75;
+        }
+
+        .letter-text p:first-of-type::first-letter {
+          font-size: 43px;
+          padding-right: 6px;
+        }
+
+        .btn-close-letter,
+        .btn-reopen {
+          width: 100%;
+          justify-content: center;
+        }
+
+        .album-grid {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          max-width: 360px;
+          gap: 22px 14px;
+        }
+
+        .polaroid {
+          width: 100%;
+          min-width: 0;
+        }
+
+        .polaroid .cap {
+          font-size: 12px;
+          overflow-wrap: anywhere;
+        }
+
+        .songs-card h2 {
+          font-size: 22px;
+        }
+
+        .section-title {
+          font-size: clamp(24px, 8vw, 30px);
+        }
+
+        .song-row {
+          gap: 8px;
+        }
+
+        .art {
+          width: 34px;
+          height: 34px;
+        }
+
+        .song-num {
+          width: 15px;
+          font-size: 12px;
+        }
+
+        .song-title {
+          font-size: 13px;
+        }
+
+        .song-artist {
+          font-size: 11px;
+        }
+
+        .music-player {
+          right: 8px;
+          bottom: max(8px, env(safe-area-inset-bottom));
+          padding: 8px 9px;
+          gap: 8px;
+          border-radius: 14px;
+          max-width: calc(100vw - 16px);
+        }
+
+        .music-icon {
+          font-size: 16px;
+        }
+
+        .music-title {
+          font-size: 11px;
+        }
+
+        .music-subtitle {
+          font-size: 9px;
+        }
+
+        .music-toggle {
+          width: 34px;
+          height: 34px;
+          flex-shrink: 0;
+        }
+      }
+
+      @media (max-width: 360px) {
+        .scene-envelope {
+          padding-left: 12px;
+          padding-right: 12px;
+        }
+
+        .eyebrow {
+          font-size: 8px;
+        }
+
+        .scene-envelope h1 {
+          font-size: 24px;
+        }
+
+        .scene-envelope p.sub {
+          font-size: 11px;
+        }
+
+        .envelope-wrap {
+          width: min(270px, 86vw, 37vh);
+        }
+
+        .choice .btn {
+          flex-basis: 100%;
+          width: 100%;
+        }
+
+        .paper {
+          padding-left: 16px;
+          padding-right: 16px;
+        }
+
+        .letter-text {
+          font-size: 15px;
+        }
+
+        .album-grid {
+          grid-template-columns: 1fr 1fr;
+          gap: 16px 10px;
+        }
+
+        .polaroid {
+          padding: 7px 7px 20px;
+        }
+
+        .songs-card {
+          padding-left: 14px;
+          padding-right: 14px;
+        }
+
+        .songs-card .vinyl {
+          opacity: 0.25;
+        }
+
+        .music-info {
+          max-width: 105px;
+        }
+      }
+
+      @media (max-height: 560px) and (orientation: landscape) {
+        .scene-envelope {
+          min-height: 100svh;
+          padding-top: 22px;
+          padding-bottom: 22px;
+          justify-content: flex-start;
+        }
+
+        .crest {
+          margin-bottom: 6px;
+        }
+
+        .eyebrow {
+          margin-bottom: 5px;
+        }
+
+        .scene-envelope h1 {
+          font-size: clamp(22px, 5vw, 32px);
+          margin-bottom: 4px;
+        }
+
+        .scene-envelope p.sub {
+          margin-bottom: 18px;
+        }
+
+        .envelope-wrap {
+          width: min(240px, 45vw);
+        }
+
+        .choice {
+          margin-top: 15px;
+        }
+
+        .scroll-hint {
+          display: none;
+        }
+      }
+
+      @media (min-width: 481px) and (max-width: 900px) {
+        .album-grid {
+          max-width: 720px;
+        }
+
+        .polaroid {
+          width: clamp(160px, 25vw, 190px);
+        }
+
+        .paper {
+          padding-left: clamp(30px, 6vw, 46px);
+          padding-right: clamp(30px, 6vw, 46px);
+        }
+      }
+
+      @media (min-width: 1600px) {
+        .scene-envelope {
+          padding-top: 70px;
+          padding-bottom: 70px;
+        }
+
+        .scene-letter,
+        .scene-album,
+        .scene-songs,
+        .scene-numbers {
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+
+        .album-grid {
+          max-width: 1100px;
+          gap: 40px;
+        }
+
+        .polaroid {
+          width: 230px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+
+      /* ===== FINAL MOBILE WIDTH FIX =====
+         Prevent any parent/viewport sizing issue from rendering the
+         page at only half of the available phone width. */
+      html,
+      body {
+        width: 100%;
+        min-width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+
+      .scene-envelope,
+      .scene-letter,
+      .scene-album,
+      .scene-songs,
+      .scene-numbers,
+      footer {
+        width: 100vw;
+        min-width: 100vw;
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      .scene-envelope,
+      .scene-letter,
+      .scene-album,
+      .scene-songs,
+      .scene-numbers {
+        overflow-x: clip;
+      }
+
+      .paper-stage,
+      .paper,
+      .songs-card,
+      .album-grid,
+      .numbers-grid {
+        max-width: 100%;
+      }
+
+      @media (max-width: 480px) {
+        .scene-envelope,
+        .scene-letter,
+        .scene-album,
+        .scene-songs,
+        .scene-numbers,
+        footer {
+          width: 100vw;
+          min-width: 100vw;
+        }
+
+        .paper-stage {
+          width: 100%;
+        }
+
+        .paper {
+          width: min(100%, 600px);
+        }
+
+        .numbers-grid {
+          width: 100%;
+        }
+      }
     </style>
   </head>
   <body>
@@ -2123,6 +2722,23 @@
       </div>
     </footer>
 
+    <!-- ============ LOVE SONG ============ -->
+    <!-- Put your MP3 file in the same folder and name it: love-song.mp3 -->
+    <audio id="loveSong" loop preload="auto">
+      <source src="love-song.mp3" type="audio/mpeg" />
+    </audio>
+
+    <div class="music-player" id="musicPlayer">
+      <div class="music-icon">♫</div>
+      <div class="music-info">
+        <div class="music-title">A little love song</div>
+        <div class="music-subtitle" id="musicState">paused</div>
+      </div>
+      <button class="music-toggle" id="musicToggle" aria-label="Play love song">
+        ▶
+      </button>
+    </div>
+
     <script>
       const ambient = document.getElementById("ambient");
       const symbols = ["♥", "✿", "♡"];
@@ -2165,10 +2781,57 @@
       const sceneLetter = document.getElementById("sceneLetter");
       const paper = document.getElementById("paper");
 
+      // ---------- love song player ----------
+      const loveSong = document.getElementById("loveSong");
+      const musicPlayer = document.getElementById("musicPlayer");
+      const musicToggle = document.getElementById("musicToggle");
+      const musicState = document.getElementById("musicState");
+
+      function updateMusicUI() {
+        const playing = !loveSong.paused;
+        musicToggle.textContent = playing ? "Ⅱ" : "▶";
+        musicToggle.setAttribute(
+          "aria-label",
+          playing ? "Pause love song" : "Play love song",
+        );
+        musicState.textContent = playing ? "playing ♡" : "paused";
+      }
+
+      async function startLoveSong() {
+        try {
+          await loveSong.play();
+        } catch (error) {
+          // Autoplay can be blocked until the user interacts with the page.
+        }
+        updateMusicUI();
+      }
+
+      function stopLoveSong() {
+        loveSong.pause();
+        loveSong.currentTime = 0;
+        updateMusicUI();
+      }
+
+      musicToggle.addEventListener("click", (event) => {
+        event.stopPropagation();
+
+        if (loveSong.paused) {
+          startLoveSong();
+        } else {
+          loveSong.pause();
+          updateMusicUI();
+        }
+      });
+
+      loveSong.addEventListener("play", updateMusicUI);
+      loveSong.addEventListener("pause", updateMusicUI);
+
       function openEnvelope() {
         if (envelope.classList.contains("open")) return;
         envelope.classList.remove("closing");
         envelope.classList.add("open");
+        musicPlayer.classList.add("show");
+        startLoveSong();
 
         // Reveal the letter section only after the envelope is opened.
         sceneLetter.classList.add("mail-visible");
@@ -2191,6 +2854,8 @@
         fireBurst();
         envelope.classList.add("closing");
         envelope.classList.remove("open");
+        musicPlayer.classList.remove("show");
+        stopLoveSong();
         mailStatus.classList.remove("show");
         mailCloseWrap.classList.remove("show");
         paper.classList.remove("visible");
@@ -2495,82 +3160,6 @@
           }
         });
       }
-
-      // ================= LOVE SONG =================
-      const loveSong = document.getElementById("loveSong");
-      const musicPlayer = document.getElementById("musicPlayer");
-      const musicToggle = document.getElementById("musicToggle");
-      const musicState = document.getElementById("musicState");
-
-      function updateMusicUI() {
-        const playing = !loveSong.paused;
-        musicToggle.textContent = playing ? "Ⅱ" : "▶";
-        musicToggle.setAttribute(
-          "aria-label",
-          playing ? "Pause love song" : "Play love song",
-        );
-        musicState.textContent = playing ? "playing ♡" : "paused";
-      }
-
-      async function startLoveSong() {
-        try {
-          await loveSong.play();
-          updateMusicUI();
-        } catch (error) {
-          // Browsers may block autoplay until the visitor interacts with the page.
-          updateMusicUI();
-        }
-      }
-
-      function stopLoveSong() {
-        loveSong.pause();
-        loveSong.currentTime = 0;
-        updateMusicUI();
-      }
-
-      musicToggle.addEventListener("click", () => {
-        if (loveSong.paused) {
-          startLoveSong();
-        } else {
-          loveSong.pause();
-          updateMusicUI();
-        }
-      });
-
-      loveSong.addEventListener("play", updateMusicUI);
-      loveSong.addEventListener("pause", updateMusicUI);
-
-      // Music appears only while the envelope is open.
-      const originalOpenEnvelope = openEnvelope;
-      openEnvelope = function () {
-        originalOpenEnvelope();
-        musicPlayer.classList.add("show");
-        startLoveSong();
-      };
-
-      const originalCloseEnvelope = closeEnvelope;
-      closeEnvelope = function () {
-        originalCloseEnvelope();
-        musicPlayer.classList.remove("show");
-        stopLoveSong();
-      };
     </script>
-
-    <!-- ============ LOVE SONG ============ -->
-    <!-- Put your MP3 file in the same folder and name it: love-song.mp3 -->
-    <audio id="loveSong" loop preload="auto">
-      <source src="love-song.mp3" type="audio/mpeg" />
-    </audio>
-
-    <div class="music-player" id="musicPlayer">
-      <div class="music-icon">♫</div>
-      <div class="music-info">
-        <div class="music-title">A little love song</div>
-        <div class="music-subtitle" id="musicState">paused</div>
-      </div>
-      <button class="music-toggle" id="musicToggle" aria-label="Play love song">
-        ▶
-      </button>
-    </div>
   </body>
 </html>
